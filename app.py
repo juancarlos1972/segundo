@@ -346,7 +346,7 @@ def guardar_datos_registro(id_grupo, data):
 
             # **NUEVA VERIFICACIÓN: Comprobar si el sorteo ya se ha realizado**
             if grupo.get("Sorteo Realizado", False): # Usar .get() para evitar KeyError
-                st.error("No se puede registrar porque el sorteo ya se ha realizado.")
+                st.error(" lo sentimos no se puede registrar porque el sorteo ya se ha realizado.")
                 return False  # No guardar los datos si el sorteo ya se ha realizado
 
             # **NUEVA VERIFICACIÓN: Verificar si el email ya está registrado (creador y participantes)**
